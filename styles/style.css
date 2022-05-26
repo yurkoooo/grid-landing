@@ -5,7 +5,6 @@
 header {
     position: relative;
     display: grid;
-    grid-template-rows: 130px 355px 190px;
 }
 
 .container {
@@ -82,13 +81,14 @@ header {
     z-index: -1;
 }
 
-.hdr__banner {
+.banner {
     display: grid;
     grid-template-areas: "hdr__text hdr__img";
     grid-template-columns: 3fr 2fr;
+    grid-template-rows: 330px 15px;
 }
 
-.hdr__text {
+.banner__text {
     grid-area: hdr__text;
     font-family: Poppins, sans-serif;
     justify-self: flex-end;
@@ -97,7 +97,7 @@ header {
     align-self: center;
 }
 
-.hdr__text h1 {
+.banner__text h1 {
     font-size: 55px;
     text-transform: capitalize;
     color: #1E385B;
@@ -106,32 +106,31 @@ header {
     margin-bottom: 25px;
 }
 
-.hdr__text span {
+.banner__text span {
     color: #FBB829;
 }
 
-.hdr__text p {
+.banner__text p {
     font-size: 20px;
     font-weight: 700;
     color: #716E6E;
     line-height: 34px;
 }
 
-.hdr__bannerImg {
+.banner__img {
     grid-area: hdr__img;
     margin-left: 57px;
 }
 
-.hdr__form {
+.banner__form {
     position: relative;
     width: 690px;
     display: grid;
     justify-self: center;
-    margin-right: 340px;
-
+    margin-left: 200px;
 }
 
-.hdr__input {
+.banner__input {
     width: 705px;
     height: 95px;
     border-radius: 60px;
@@ -140,11 +139,11 @@ header {
     padding-left: 30px;
 }
 
-.hdr__input::placeholder {
+.banner__input::placeholder {
     color: #ADA3A3;
 }
 
-.hdr__formBtn {
+.banner__formBtn {
     background: #FBB829;
     color: white;
     width: 160px;
@@ -160,7 +159,7 @@ header {
     transition: color 0.3s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.hdr__formBtn:hover {
+.banner__formBtn:hover {
     color: #FBB829;
     background: white;
     box-shadow: 0px 4px 31px rgba(251, 184, 41, 0.5);
@@ -175,6 +174,7 @@ header {
     height: 219px;
     justify-self: center;
     width: 1024px;
+    margin-top: 100px;
 }
 
 .statistic__feature {

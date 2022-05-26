@@ -166,19 +166,18 @@ header {
     box-shadow: 0px 4px 31px rgba(251, 184, 41, 0.5);
 }
 
-.hdr__statistic {
+.statistic {
     align-content: center;
     background: #FFEEB9;
     border-radius: 21px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 219px;
-    justify-content: center;
     justify-self: center;
     width: 1024px;
 }
 
-.hdr__feature {
+.statistic__feature {
     align-items: center;
     display: grid;
     grid-template-columns: 100px 100px;
@@ -187,7 +186,7 @@ header {
     justify-self: center;
 }
 
-.hdr__featureNumber {
+.statistic__featureNumber {
     color: #FBB528;
     font-family: Barlow, sans-serif;
     font-size: 40px;
@@ -195,22 +194,17 @@ header {
     margin: 0;
 }
 
-.hdr__featureText {
+.statistic__featureText {
     color: #9A9898;
     font-family: Poppins, sans-serif;
     font-size: 20px;
     font-weight: 500;
     margin: 0;
-}
-
-.hdr__featureText {
-    font-family: Poppins, sans-serif;
     width: 145px;
     text-transform: uppercase;
-    
 }
 
-.hdr__featureImg {
+.statistic__featureImg {
     align-content: center;
     background: white;
     border-radius: 18px;
@@ -220,7 +214,7 @@ header {
     width: 97px;
 }
 
-.hdr__featureDescription {
+.statistic__featureDescription {
     display: grid;
     grid-row-gap: 10px;
     

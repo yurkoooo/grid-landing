@@ -220,3 +220,121 @@ header {
     
 }
 
+.support {
+    display: grid;
+    grid-template-rows: 240px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.support__description {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+}
+
+.support__description h2 {
+    color: #1E385B;
+    text-transform: capitalize;
+    font-size: 55px;
+    margin: 0;
+}
+
+.support__descriptionQuestion {
+    color: #FBB829;
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.support__descriptionText {
+    color: #716E6E;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.support__advices {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
+}
+
+.support__cards {
+    width: 224px;
+    height: 266px;
+    border-radius: 15px;
+    box-shadow: 0px 6.36px 36px rgba(0, 0, 0, 0.08);
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 143px 0 100px;
+    position: relative;
+    background-color: #fff;
+}
+
+.support__cards h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.support__cards p {
+    font-size: 18px;
+    color: #716E6E;
+    line-height: 27px;
+}
+
+.support__cards::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    top: -3px;
+    left: -15px;
+    transform: scaleX(0.8);
+    border-radius: 15px;
+    z-index: -1;
+  }
+  
+.orange::before {
+    background-color: #FFC000;
+  }
+
+.violet::before {
+    background-color: #BD00FF;
+  }  
+
+.blue::before {
+    background-color: #9DACFE;
+  }  
+
+.red::before {
+    background-color: #FCA9A9;
+  }  
+  
+.support__cards::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    bottom: -3px;
+    right: -15px;
+    transform: scaleX(0.8);
+    border-radius: 15px;
+    z-index: -1;
+  }
+
+.orange::after {
+    background-color: orange;
+  }
+
+.violet::after {
+    background-color: #BD00FF;
+  }  
+
+.blue::after {
+    background-color: #9DACFE;
+  }  
+
+.red::after {
+    background-color: #FCA9A9;
+  }  

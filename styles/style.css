@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
+
 header {
     position: relative;
     display: grid;
@@ -11,6 +12,28 @@ header {
 .container {
     width: 1024px;
     margin: 0 auto;
+}
+
+.circle__wrap {
+    overflow: hidden;
+}
+
+.circle__container {
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.circle {
+    position: absolute;
+    width: 1110px;
+    height: 1090px;
+    border-radius: 50%;
+    top: 380px;
+    right: -40px;
+    background: #FFEEB9;
+    z-index: -2;
 }
 
 .fontAwesome {
@@ -335,7 +358,6 @@ header {
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
     margin-top: 90px;
-    position: relative;
 }
 
 .advantage__content {
@@ -352,6 +374,7 @@ header {
     text-transform: capitalize;
     margin-top: 0;
     margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
 .advantage__content span {
@@ -360,7 +383,7 @@ header {
 
 .advantage__body {
     display: grid;
-    grid-template-rows: 125px 190px 100px;
+    grid-template-rows: 1fr 1.2fr 1fr;
 }
 
 .advantage__list {
@@ -388,14 +411,372 @@ header {
     line-height: 30px;
 }
 
-.advantage__circle {
-    position: absolute;
-    width: 1110px;
-    height: 1090px;
+.job {
+    display: grid;
+    justify-items: center;
+    margin-top: 100px;
+    grid-template-rows: 280px;
+}
+
+.job__title {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+}
+
+.job__title h2 {
+    font-size: 55px;
+    text-transform: capitalize;
+    color: #1E385B;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+
+.job__title p {
+    font-size: 22px;
+    color: #716E6E;
+    letter-spacing: 1px;
+    margin: 0;
+    line-height: 33px;
+
+}
+
+.job__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+}
+
+.job__cards {
+    width: 316px;
+    height: 300px;
+    box-shadow: 4px 4px 81px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    font-family: Poppins, sans-serif;
+    display: grid;
+    grid-template-rows: 45px 70px;
+    box-sizing: border-box; 
+    border-radius: 20px;
+    transition: transform 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+.job__orange {
+    border-bottom: 23px solid #FBB829; 
+}
+
+.job__violet {
+    border-bottom: 23px solid #8B3DEF;
+}
+
+.job__yellow {
+    border-bottom: 23px solid #FFD600;
+}
+
+.job__blue {
+    border-bottom: 23px solid #5CABF4;
+}
+
+.job__pink {
+    border-bottom: 23px solid #FF93CD;
+}
+
+.job__cards:last-child {
+    border: 2px solid #FF8A01;
+    display: grid;
+    justify-items: center;
+    align-items: end;
+    grid-template-rows: 175px 40px;
+}
+
+.job__mainText {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 36px;
+}
+
+.job__images {
+    display: grid;
+    grid-template-columns: 25px 15px 35px 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.job__circle {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    top: -235px;
-    right: -310px;
-    background: #FFEEB9;
-    z-index: -2;
-    overflow-x: hidden;
+    background: #5CABF4;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    font-weight: 800;
+}
+
+.job__gradient {
+    font-size: 20px;
+    font-weight: 800;
+    background:  linear-gradient(112.5deg, #FF1212 0%, rgba(255, 68, 162, 0.74) 34.57%, 
+    rgba(49, 245, 17, 0.58) 61.35%, rgba(55, 28, 219, 0.94) 78.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 35px;
+    height: 25px;
+    justify-self: right;
+    margin-right: 20px;
+}
+
+.job__cards:hover .job__gradient {
+    animation: gradient 1s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background:linear-gradient(112.5deg, #FF1212 0%, rgba(255, 68, 162, 0.74) 34.57%, 
+    rgba(49, 245, 17, 0.58) 61.35%, rgba(55, 28, 219, 0.94) 78.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    
+    15% {
+        background: linear-gradient(90deg, #FF1212 0%, rgba(255, 68, 162, 0.74) 34.57%, 
+    rgba(49, 245, 17, 0.58) 61.35%, rgba(55, 28, 219, 0.94) 78.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    25% {
+        background: linear-gradient(45deg, #FF1212 0%, rgba(255, 68, 162, 0.74) 34.57%, 
+    rgba(49, 245, 17, 0.58) 61.35%, rgba(55, 28, 219, 0.94) 78.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    35% {
+        background: linear-gradient(25deg, #FF1212 0%, rgba(255, 68, 162, 0.74) 34.57%, 
+    rgba(49, 245, 17, 0.58) 61.35%, rgba(55, 28, 219, 0.94) 78.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    45% {
+        background: linear-gradient(-25deg, #FF1212 0%, rgba(255, 68, 162, 0.74) 34.57%, 
+    rgba(49, 245, 17, 0.58) 61.35%, rgba(55, 28, 219, 0.94) 78.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    50% {
+        background: linear-gradient(-45deg, #FF1212 0%, rgba(255, 68, 162, 0.74) 34.57%, 
+    rgba(49, 245, 17, 0.58) 61.35%, rgba(55, 28, 219, 0.94) 78.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    75% {
+        background: linear-gradient(-90deg, #FF1212 0%, rgba(255, 68, 162, 0.74) 34.57%, 
+    rgba(49, 245, 17, 0.58) 61.35%, rgba(55, 28, 219, 0.94) 78.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    100% {
+        background: linear-gradient(-112.5deg, #FF1212 0%, rgba(255, 68, 162, 0.74) 34.57%, 
+        rgba(49, 245, 17, 0.58) 61.35%, rgba(55, 28, 219, 0.94) 78.4%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.job__heading {
+    display: grid;
+    grid-template-columns: 80px 120px 115px;
+    height: 80px;
+    justify-items: center;
+    margin-left: 10px;
+}
+
+.job__amazon {
+    width: 60px;
+    height: 60px;
+}
+
+.job__paypal {
+    border-radius: 50%;
+}
+
+.job__procter, .job__apple {
+    justify-self: end;
+}
+
+.job__main {
+    display: grid;
+    grid-template-rows: 30px;
+}
+
+.job__company {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.job__map {
+    display: grid;
+    grid-template-columns: 20px 10px;
+}
+
+.job__map i {
+    color: #3E9FF9;
+    font-size: 20px;
+}
+
+.job__location {
+    margin: 0;
+    font-size: 20px;
+    color: #716E6E;
+    font-weight: 600;
+}
+
+.job__earning {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    height: 50px;
+    margin: 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25px 60px;
+    padding-left: 5px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.job__earning span {
+    font-weight: 400;
+    color: #8B8484;
+}
+
+.job__description {
+    display: grid;
+    margin-left: 35px;
+    grid-template-rows: 40px;
+}
+
+.job__basis {
+    display: grid;
+    grid-template-columns: repeat(2, 100px)
+}
+
+.job__basis, .job__representation {
+    font-size: 16px;
+    color: rgba(113, 110, 110, 0.8);
+}
+
+.job__basis p {
+    margin-bottom: 0;
+}
+
+.job__representation {
+    text-align: center;
+    margin-right: 35px;
+    margin-bottom: 0;
+}
+
+.job__vacancy {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.job__switch {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-top: 5px;
+}
+
+.job__switch p {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 15px;
+}
+
+.job__switch span {
+    color: white;
+    padding: 0 5px;
+}
+
+.job__arrow {
+    position: relative;
+}
+
+.job__arrow:before {
+    content: '';
+    width: 30px;
+    color: white;
+    position: absolute;
+    top: 23px;
+    right: -53px;
+    border: 1px solid white;
+}
+
+.job__arrow:after {
+    content: '';
+    transform: rotate(-45deg);
+    border-width: 0 3px 3px 0;
+    border-style: solid;
+    border-color: white;
+    padding: 4px;
+    position: absolute;
+    right: -54px;
+    top: 18px;
+}
+
+.job__cards:hover {
+    transform: scale(1.05);
+}
+
+.job__cards:hover .job__arrow {
+    animation-name: arrow;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.job__cards:hover .job__switch p {
+    animation-name: text;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+    0% {
+        right: 0;
+    }
+
+    50% {
+        right: 10px;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes text {
+    0% {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    50% {
+        color: white;
+    }
+
+    100% {
+        color: rgba(255, 255, 255, 0.8);
+    }
 }

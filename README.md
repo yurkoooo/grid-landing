@@ -1,6 +1,6 @@
 # Grid Landing Template
 
-<img src='./images/readme.png'>
+<img src="A./images/readme.png">
 
 ## Tech:
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt='html icon' width = "40" height = "40">
